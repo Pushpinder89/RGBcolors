@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Example 1</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="main">
+
+    <h2>CSS Color Displayer</h2>
+    <p class="size"> Select a number from 0 to 255 for each color value:</p>
+    
+    
+    <!-- a left whole boxes div -->
+    
+    <div id="wholeboxes">
+    
+    <!--box 1st-->
+    <div class="mainDiv">
+    <b> Red:</b> 
+     <div class="miniDiv"> 
+    
+    <input name="number" class="acolor" id="red" type="number" min="0" max= "255" value="">
+    </div>
+    </div>
+    
+    <!--box 2nd -->
+        <div class="mainDiv">
+    <b> Green: </b>
+     <div class="miniDiv"> 
+    
+    <input name="number" class="acolor" id="green" type = "number" min="0" max= "255" value="">
+    </div>
+    </div>
+    
+    <!--box 3rd -->
+        <div class="mainDiv">
+     <b> Blue: </b>
+     <div class="miniDiv"> 
+     
+    <input name="number" class="acolor"  id="blue" type= "number" min="0" max= "255" value="">
+    </div>
+    </div>
+    
+   </div> <!--end of left whole boxes div-->
+   
+   <!-- right whole boxes div-->
+   <div id="buttons"> 
+    <button  class="button1"  id="btn1" onclick = "chBackcolor('bottom')">Show me the Color!</button>
+    <br />
+    <button class="button1" id="btn2" onclick="clearBox('bottom')"> Clear All</button>
+   </div>
+    
+    <!-- end of right boxes div-->
+    
+    <!-- bottom box div -->
+    <div id="bottom"  > </div>
+    
+    <!--end of bottom div -->
+    
+</div>
+
+<script>
+let btn1 = document.getElementById("btn1");
+let input = document.getElementsByClassName("acolor"); 
+let box = document.getElementById("bottom");
+let colorRed = 255;
+let colorGreen = 255;
+let colorBlue = 255;
+   /*data save function*/
+      
+	       function displayOutput () {
+			let userColor = input.value;
+			bottom.innerHTML = userColor + "<br>";
+                        
+                        input=parseInt(input);
+                        if(isNaN(input)){
+                        alert("enter a number");
+                          }
+                          else{
+                        
+                       btn1.addEventListener("click",displayOutput,false);
+                        }};
+		
+		
+		
+                
+              /* userColor=parseInt(userColor);
+                if(isNaN(userColor)){
+                alert("enter a number");
+                }
+                else{
+                btn1.addEventListener("click",displayOutput,false);
+                }
+                
+                
+     /*color function*/
+                
+  function chBackcolor(bottom){
+   
+   var colorRed= document.getElementById("red").value;
+   var colorGreen= document.getElementById("green").value;
+   var colorBlue= document.getElementById("blue").value;
+   document.getElementById(bottom).style.background = "rgb(" + colorRed + "," + colorGreen + "," + colorBlue + ")";
+   }             
+                  
+  /*data clear function*/              
+function clearBox(bottom)
+{
+    document.getElementById(bottom).innerHTML = "";
+}
+	
+</script>
+
+
+
+</body>
+</html>

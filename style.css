@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+body
+{
+background:black;
+}
+
+#main{
+background-color:rgb(255,246,205);	
+border:1px solid rgb(233,69,0);
+margin:10% 0px 30px 25%;
+width:46%;
+height:400px;
+}
+
+ h2
+  {
+  margin-left:50px;
+  
+  }
+
+ .size{
+     font-size:25px;
+     margin-left:50px;
+   }
+   
+   
+#wholeboxes
+{
+margin-left:50px;
+
+}
+
+
+.mainDiv
+{border:1px solid rgb(233,69,0);
+height: 100px;
+width:100px;
+text-align:center;
+margin-left:15px;
+padding-top:15px;
+float:left
+   }
+   
+.miniDiv
+{
+height: 60px;
+width:60px;
+text-align:center;
+margin-left:18px;
+
+
+ }
+   
+.acolor
+{
+margin-top:15px;
+height:15px;
+width:50px;
+
+}
+
+#buttons{
+
+float:left;
+margin-left:10px;
+
+
+}
+
+.button1{
+border-radius:5px;
+border:1px solid rgb(233,69,0);
+
+}
+
+
+
+#bottom
+{
+ width:550px;
+ height:70px;
+ border:1px solid rgb(233,69,0);
+ float:left;
+ margin-bottom:10px;
+ margin-top:30px;
+ margin-left:30px;
+ background-color:"";
+ 
+}
